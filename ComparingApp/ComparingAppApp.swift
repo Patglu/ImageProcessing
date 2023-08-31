@@ -11,7 +11,8 @@ import SwiftUI
 struct ComparingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChooseClothesView()
+                .environmentObject(ComparingClothesViewModel())
         }
     }
 }
